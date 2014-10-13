@@ -1,9 +1,9 @@
 /**
  * 
- * Java program that simulates a circular primes encryption device.
+ * Java program that simulates a circular primes decryption device.
  * Unlike a regular Caesar cipher, this version uses the key as its circular prime upper limit.
  * This limit is then used to calculate the sum of positive circular primes below it.
- * The calculated sum is then used as the shift number to encrypt the message.
+ * The calculated sum is then used as the shift number to decrypt the message.
  * 
  * This a safer version of the Caesar cipher, since it offers two layers of security:
  * Either the key or the method can be made public without revealing the message.
@@ -31,13 +31,13 @@ public class OPrime_Cipher {
             System.out.println("Please enter your message:");
             String inText = input.nextLine();
             char[] arr = inText.toUpperCase().toCharArray();
-            System.out.println("Please enter your key:");
+            System.out.println("Please enter your key.");
             int sKey = Integer.parseInt(input.nextLine());
-            System.out.println("Encrypted message:");
-            encrypt(arr, sumOPrimes(sKey));
+            System.out.println("Decrypted message:");
+            decrypt(arr, sumOPrimes(sKey));
             System.out.println();
             input.close();
-        }
+        }    
     }
     
     public static boolean isLetter(Character x){
@@ -68,7 +68,8 @@ public class OPrime_Cipher {
         return x;
     }
             
-    public static void encrypt(char[] a, int x){
+    public static void decrypt(char[] a, int x){
+        x = -x;
         for(int i=0; i<a.length; i++){
             if(isLetter(a[i])){
                 a[i] = alphabet.charAt(Lpos(alphabet.charAt(Apos(Lpos(a[i])+x))));
