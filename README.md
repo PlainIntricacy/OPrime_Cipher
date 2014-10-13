@@ -28,3 +28,9 @@ https://projecteuler.net/problem=35
 https://en.wikipedia.org/wiki/Caesar_cipher
 
 https://github.com/PlainIntricacy/Circular_Primes
+
+=============
+
+For the decryption version, use the decrypt branch:
+
+https://github.com/PlainIntricacy/OPrime_Cipher/tree/decrypt
