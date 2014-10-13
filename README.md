@@ -1,17 +1,17 @@
 OPrime_Cipher
 =============
 
-Version of Caesar cipher that uses the sum of circular primes below the given key to encrypt the given message.
+Version of Caesar cipher that uses the sum of circular primes below the given key to decrypt the given message.
 
 =============
 
-Java program that simulates a circular primes encryption device.
+Java program that simulates a circular primes decryption device.
 
 Unlike a regular Caesar cipher, this version uses the key as its circular prime upper limit.
 
-This limit is then used to calculate the sum of positive circular primes below it.
+This limit is used to calculate the sum of positive circular primes below it.
 
-The calculated sum is then used as the shift number to encrypt the message.
+The calculated sum is then used as the shift number to decrypt the message.
 
 =============
 
