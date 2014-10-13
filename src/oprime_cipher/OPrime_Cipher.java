@@ -2,7 +2,7 @@
  * 
  * Java program that simulates a circular primes decryption device.
  * Unlike a regular Caesar cipher, this version uses the key as its circular prime upper limit.
- * This limit is then used to calculate the sum of positive circular primes below it.
+ * This limit is used to calculate the sum of positive circular primes below it.
  * The calculated sum is then used as the shift number to decrypt the message.
  * 
  * This a safer version of the Caesar cipher, since it offers two layers of security:
