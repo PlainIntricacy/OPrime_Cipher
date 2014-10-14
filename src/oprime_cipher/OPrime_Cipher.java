@@ -5,9 +5,6 @@
  * This limit is then used to calculate the sum of positive circular primes below it.
  * The calculated sum is then used as the shift number to encrypt the message.
  * 
- * This a safer version of the Caesar cipher, since it offers two layers of security:
- * Either the key or the method can be made public without revealing the message.
- * 
  * Based on problem 35 on projecteuler.net, and the Caesar Cipher.
  * 
  * https://projecteuler.net/problem=35
