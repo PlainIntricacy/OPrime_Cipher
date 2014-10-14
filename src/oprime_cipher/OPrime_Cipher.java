@@ -23,7 +23,7 @@ import java.util.Scanner;
  *  @author todyerutz @ plainintricacy.wordpress.com
  */
 public class OPrime_Cipher {
-
+    
     public static String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     public static void main(String[] args) {
@@ -59,11 +59,11 @@ public class OPrime_Cipher {
     }
     
     public static int Apos(int x){
-        if(x>alphabet.length()){
-            return x-alphabet.length();
-        }else
-            if(x<0){
-                return alphabet.length()+x;
+        while(x>alphabet.length()){
+            return Apos(x-alphabet.length());
+        };
+        while(x<0){
+                return Apos(alphabet.length()+x);
             }        
         return x;
     }
